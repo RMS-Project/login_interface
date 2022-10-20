@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #595959;
+            background: -webkit-radial-gradient(circle, #595959 0%, #363636 50%, #000000 100%);
+            background: radial-gradient(circle, #595959 0%, #363636 50%, #000000 100%);
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+        }
+
+        .orbit {
+            position: absolute;
+            top: 20%;
+            right: 5%;
+            width: 500px;
+            height: 500px;
+            border-radius: 54% 46% 31% 69% / 30% 38% 61% 70%;
+            background: #fc0000;
+            background: -webkit-linear-gradient(27deg, #fc0000 0%, #ff9c00 50%, #ffea00 100%);
+            background: linear-gradient(27deg, #fc0000 0%, #ff9c00 50%, #ffea00 100%);
+            animation: rotate-animation 80s infinite linear;
+        }
+
+        @keyframes rotate-animation {
+            from {
+                rotate: 0deg;
+            }
+
+            to {
+                rotate: 360deg;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="orbit"></div>
+</body>
+</html>
